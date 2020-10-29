@@ -14,7 +14,7 @@ The repository contains the following files and folders:
 * ```run_states.jl``` runs code that selects pharmacies to maximize access for individual states.
 
 ## Requirements to run code
-The code is in the Julia programming language, using the following open source packages (versions in parentheses were used to run ```run_national.jl``` and ```run_states.jl``` to get the results in ```results```):
+The code is in the Julia programming language, using the following open source packages (versions in parentheses and Julia v1.4.2 were used to run ```run_national.jl``` and ```run_states.jl``` to get the results in ```results```):
 * [JuMP](https://jump.dev/JuMP.jl/stable/) (v0.21.3) for mathematical optimization.
 * [JSON](https://github.com/JuliaIO/JSON.jl) (v0.21.0) for parsing and printing ```JSON``` files.
 * [CSV](https://juliadata.github.io/CSV.jl/stable/) (v0.7.5) for utilities for working with ```CSV``` files.
