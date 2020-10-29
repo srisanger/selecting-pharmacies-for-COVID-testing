@@ -14,15 +14,14 @@ The repository contains the following files and folders:
 * ```run_states.jl``` runs code that selects pharmacies to maximize access for individual states.
 
 ## Requirements to run code
-The code is in the Julia programming language, using the following open source packages:
-* [JuMP](https://jump.dev/JuMP.jl/stable/) for mathematical optimization.
-* [JSON](https://github.com/JuliaIO/JSON.jl) for parsing and printing ```JSON``` files.
-* [CSV](https://juliadata.github.io/CSV.jl/stable/) for utilities for working with ```CSV``` files.
-* [DataFrames](http://juliadata.github.io/DataFrames.jl/stable/) for tabular data manipulation.
-* [Statistics](https://docs.julialang.org/en/v1/stdlib/Statistics/) for basic statistics functionality.
-* [DataStructures](https://juliacollections.github.io/DataStructures.jl/latest/) for the ```PriorityQueue``` data structure.
-* [Plots](http://docs.juliaplots.org/latest/) to plot results.
-* A solver. The code currently uses the open source [GLPK](http://www.gnu.org/software/glpk/) solver. Other solvers are possible as long as they are compatible with JuMP. The user must remember to change GLPK to the solver of their choice in ```model.jl```.
+The code is in the Julia programming language, using the following open source packages (versions in parentheses were used to run ```run_national.jl``` and ```run_states.jl``` to get the results in ```results```):
+* [JuMP](https://jump.dev/JuMP.jl/stable/) (v0.21.3) for mathematical optimization.
+* [JSON](https://github.com/JuliaIO/JSON.jl) (v0.21.0) for parsing and printing ```JSON``` files.
+* [CSV](https://juliadata.github.io/CSV.jl/stable/) (v0.7.5) for utilities for working with ```CSV``` files.
+* [DataFrames](http://juliadata.github.io/DataFrames.jl/stable/) (v0.21.3) for tabular data manipulation.
+* [DataStructures](https://juliacollections.github.io/DataStructures.jl/latest/) (v0.17.19) for the ```PriorityQueue``` data structure.
+* [Plots](http://docs.juliaplots.org/latest/) (v1.5.7) to plot results.
+* A solver. The code currently uses the open source [GLPK](http://www.gnu.org/software/glpk/) solver (v0.13.0). Other solvers are possible as long as they are compatible with JuMP. The user must remember to change GLPK to the solver of their choice in ```model.jl```.
 
 ## Data
 The code is general, and users can run their own code by using their own ```areas.csv``` and ```pharmacies.csv``` files. Note that altough we use pharmacies in our study, one can estimate access and travel distances to other facilties than pharmacies.
